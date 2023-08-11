@@ -1,0 +1,330 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body, .small-gallery-container , .services-section{
+    background-color: #848282;
+}
+/* Basic styling for the navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+ 
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling for the hero section */
+.hero {
+    text-align: center;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(126, 187, 233, 0.8), rgba(0,0,0,0.5)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Yatra One', cursive, sans-serif; /* Change to Roboto font */
+    font-size: 3rem;
+    color: black;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero p {
+    font-family: 'Great Vibes', cursive, sans-serif;
+    font-size: 1.4rem;
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+
+/* Slideshow Section */
+.slides{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    opacity: 10; /* You can adjust the blur amount (10px in this example) */
+    margin-bottom: 5px;
+}
+#imgdisp {
+    width: 45%;
+    height: 100%;
+}
+
+.small-gallery {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.small-gallery h2 {
+    font-size: 24px;
+    margin: 0%;
+}
+
+.small-gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+
+.small-gallery-item {
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.small-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small-gallery-item.selected {
+    border-color: aqua;
+}
+/* Gallery Section */
+/* Centered gallery grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.gallery-item {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Description styling */
+.description {
+    padding: 10px 20px;
+}
+
+.description h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.description p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.gallery-item img {
+    max-height: 180px; /* Adjust the value as needed */
+    /* ... (other styles) */
+}
+
+/* Centered gallery container */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    padding: 0 10px;
+}
+
+.gallery h2 {
+
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/* styles.css */
+
+
+.services-section {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wfdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wdiv,
+  .fdiv {
+    width: 45%; /* Set a fixed width for both divs */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wdiv {
+    margin-right: 10px;
+  }
+  
+  .custom-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px; /* Adjusted padding for smaller button */
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px; /* Adjusted font size for smaller button */
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Adjust image styles */
+  .wdiv img,
+  .fdiv img {
+    width: 90px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+
+
+
+@media (max-width: 768px) {
+    /* Navigation bar */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 1rem;
+    }
+    
+    /* Hero section */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    /* Slideshow section */
+    .slides{
+        height: 170px;
+    }
+    #imgdisp{
+        width: 60%;
+    }
+    /* Small gallery */
+    .small-gallery-item {
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Services section */
+    .wfdiv {
+        flex-direction: column;
+    }
+    
+    .wdiv, .fdiv {
+        margin: 10px 0;
+    }
+    
+    /* Gallery section */
+    
+    .gallery-container {
+        align-items: center;
+    }
+    .wfdiv{
+        justify-content: center;
+    }
+    
+    /* Centered gallery grid */
+    .image-grid {
+        justify-content: center;
+    }
+    
+    .gallery-item {
+        width: 80%; /* Adjust the width as needed */
+    }
+    .gallery-item img{
+        width: 100%; /* Adjust the width as needed */
+    }
+
+}
+
+footer{
+    margin-top: 10px;
+}
